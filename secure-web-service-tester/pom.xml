@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>secure-web-service-tester</groupId>
+	<artifactId>secure-web-service-tester</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<dependencies>
+		<!-- Lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.20</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<!-- log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		
+		<!-- Commons Logging -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
+		<!-- Commons Lang -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.12.0</version>
+		</dependency>
+		
+		<!-- Commons Configuration -->
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.10</version>
+		</dependency>
+		
+	</dependencies>
+	
+	<build>
+		<plugins>
+	      	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<verbose>true</verbose>
+					<source>1.8</source>
+					<target>1.8</target>
+					<showWarnings>true</showWarnings>
+				</configuration>
+			</plugin>
+	      	
+			<plugin>
+		        <artifactId>maven-assembly-plugin</artifactId>
+		        <version>3.3.0</version>
+		        <configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.webservice.ssl.client.app.ClientApp</mainClass>
+						</manifest>
+					</archive>
+		        	<descriptorRefs>
+		            	<descriptorRef>jar-with-dependencies</descriptorRef>
+		          	</descriptorRefs>
+		        </configuration>
+		        <executions>
+		          	<execution>
+		          		<!-- this is used for inheritance merges -->			
+		            	<id>make-assembly</id>
+		            	<!-- bind to the packaging phase -->
+		            	<phase>package</phase>
+		            	<goals>
+		              		<goal>single</goal>
+		            	</goals>
+		          	</execution>
+		        </executions>
+		    </plugin>
+    	</plugins>
+    </build>
+	
+</project>

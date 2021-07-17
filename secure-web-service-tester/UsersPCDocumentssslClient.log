@@ -1,0 +1,39 @@
+2021-07-17 22:30:54 INFO  SSLContextConfig:89 -  In initializeSSLContext
+2021-07-17 22:30:56 INFO  SSLContextConfig:129 - [initializeSSLContext] KMF keystorepw loaded.
+2021-07-17 22:30:57 INFO  SSLContextConfig:148 - [initializeSSLContext] KMF init done.
+2021-07-17 22:30:57 INFO  SSLContextConfig:164 - [initializeSSLContext] Truststore initialized
+2021-07-17 22:31:00 INFO  SSLClient:90 - Response Code :200
+2021-07-17 22:36:22 INFO  SSLContextConfig:96 -  In initializeSSLContext
+2021-07-17 22:36:23 INFO  SSLContextConfig:142 - [initializeSSLContext] KMF keystorepw loaded.
+2021-07-17 22:36:23 INFO  SSLContextConfig:164 - [initializeSSLContext] KMF init done.
+2021-07-17 22:36:23 INFO  SSLContextConfig:183 - [initializeSSLContext] Truststore initialized
+2021-07-17 22:36:25 INFO  SSLClient:94 - Response Code :200
+2021-07-17 22:36:49 INFO  SSLContextConfig:96 -  In initializeSSLContext
+2021-07-17 22:36:50 INFO  SSLContextConfig:142 - [initializeSSLContext] KMF keystorepw loaded.
+2021-07-17 22:36:50 INFO  SSLContextConfig:164 - [initializeSSLContext] KMF init done.
+2021-07-17 22:36:51 INFO  SSLContextConfig:183 - [initializeSSLContext] Truststore initialized
+2021-07-17 22:36:52 INFO  SSLClient:94 - Response Code :201
+2021-07-17 22:43:47 INFO  SSLContextConfig:96 -  In initializeSSLContext
+2021-07-17 22:43:48 INFO  SSLContextConfig:142 - [initializeSSLContext] KMF keystorepw loaded.
+2021-07-17 22:43:48 INFO  SSLContextConfig:164 - [initializeSSLContext] KMF init done.
+2021-07-17 22:43:48 INFO  SSLContextConfig:183 - [initializeSSLContext] Truststore initialized
+2021-07-17 22:44:01 INFO  SSLContextConfig:96 -  In initializeSSLContext
+2021-07-17 22:44:02 INFO  SSLContextConfig:142 - [initializeSSLContext] KMF keystorepw loaded.
+2021-07-17 22:44:02 INFO  SSLContextConfig:164 - [initializeSSLContext] KMF init done.
+2021-07-17 22:44:03 INFO  SSLContextConfig:183 - [initializeSSLContext] Truststore initialized
+2021-07-17 22:44:08 INFO  SSLClient:94 - Response Code :200
+2021-07-17 22:44:13 INFO  SSLContextConfig:96 -  In initializeSSLContext
+2021-07-17 22:44:14 INFO  SSLContextConfig:142 - [initializeSSLContext] KMF keystorepw loaded.
+2021-07-17 22:44:14 INFO  SSLContextConfig:164 - [initializeSSLContext] KMF init done.
+2021-07-17 22:44:14 INFO  SSLContextConfig:183 - [initializeSSLContext] Truststore initialized
+2021-07-17 22:44:18 INFO  SSLClient:94 - Response Code :200
+2021-07-17 22:44:26 INFO  SSLContextConfig:96 -  In initializeSSLContext
+2021-07-17 22:44:27 INFO  SSLContextConfig:142 - [initializeSSLContext] KMF keystorepw loaded.
+2021-07-17 22:44:27 INFO  SSLContextConfig:164 - [initializeSSLContext] KMF init done.
+2021-07-17 22:44:27 INFO  SSLContextConfig:183 - [initializeSSLContext] Truststore initialized
+2021-07-17 22:44:31 INFO  SSLClient:94 - Response Code :422
+2021-07-17 22:45:28 INFO  SSLContextConfig:96 -  In initializeSSLContext
+2021-07-17 22:45:29 INFO  SSLContextConfig:142 - [initializeSSLContext] KMF keystorepw loaded.
+2021-07-17 22:45:29 INFO  SSLContextConfig:164 - [initializeSSLContext] KMF init done.
+2021-07-17 22:45:29 INFO  SSLContextConfig:183 - [initializeSSLContext] Truststore initialized
+2021-07-17 22:45:35 INFO  SSLClient:94 - Response Code :201

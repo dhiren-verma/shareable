@@ -13,10 +13,8 @@ import com.webservice.ssl.client.SSLClient;
 public class ClientApp {
 
 	public static void main(String[] args) {
-		//Option 1 load Configuration:
-		//It also loads the Logger
 		Configuration config = null;
-		//Load (String)configuration
+		
 		try {
 			config = new PropertiesConfiguration("app.properties");
 		} catch(Exception e) {
@@ -35,54 +33,6 @@ public class ClientApp {
 		ac.setKeystoreType((String)config.getProperty("keystoreType"));
 		ac.setTrustAllCertificate((String)config.getProperty("trustAllCertificate"));
 		ac.setKeymanageralgorithm((String)config.getProperty("keymanageralgorithm"));
-		
-		System.out.println(config.getProperty("KEYSTOREPATH"));
-		System.out.println(config.getProperty("TRUSTSTOREPATH"));
-		System.out.println(config.getProperty("KEYSTOREPW"));
-		System.out.println(config.getProperty("TRUSTSTOREPW"));
-		System.out.println(config.getProperty("KEYPASS"));
-		System.out.println(config.getProperty("keystoreType"));
-		System.out.println(config.getProperty("trustAllCertificate"));
-		System.out.println(config.getProperty("keymanageralgorithm"));
-		
-		
-		//Option 2 load Properties:
-		//It doesn't load the Logger:
-//		Properties properties = new Properties();
-//		InputStream propertiesStream = null;
-//		
-//		try {
-//			propertiesStream = ClientApp.class.getClassLoader().getResourceAsStream("app.properties");
-//		} catch (Exception ex) {
-//			ex.printStackTrace();
-//		}
-//		
-//		if (propertiesStream!=null) {
-//			try {
-//				properties.load(propertiesStream);
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//		}
-//		
-//		ac.setKEYSTOREPATH((String)properties.getProperty("KEYSTOREPATH"));
-//		ac.setTRUSTSTOREPATH((String)properties.getProperty("TRUSTSTOREPATH"));
-//		ac.setKEYSTOREPW((String)properties.getProperty("KEYSTOREPW"));
-//		ac.setTRUSTSTOREPW((String)properties.getProperty("TRUSTSTOREPW"));
-//		ac.setKEYPASS((String)properties.getProperty("KEYPASS"));
-//		ac.setKeystoreType((String)properties.getProperty("keystoreType"));
-//		ac.setTrustAllCertificate((String)properties.getProperty("trustAllCertificate"));
-//		ac.setKeymanageralgorithm((String)properties.getProperty("keymanageralgorithm"));
-//		
-//		System.out.println(properties.getProperty("KEYSTOREPATH"));
-//		System.out.println(properties.getProperty("TRUSTSTOREPATH"));
-//		System.out.println(properties.getProperty("KEYSTOREPW"));
-//		System.out.println(properties.getProperty("TRUSTSTOREPW"));
-//		System.out.println(properties.getProperty("KEYPASS"));
-//		System.out.println(properties.getProperty("keystoreType"));
-//		System.out.println(properties.getProperty("trustAllCertificate"));
-//		System.out.println(properties.getProperty("keymanageralgorithm"));
 		
 		String strurl;
 		URL url;
